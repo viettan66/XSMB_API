@@ -61,7 +61,8 @@ FROM            dbo.tbl_giai1 INNER JOIN
                          dbo.tbl_giai5 ON dbo.tbl_time.tbl_giai5_tbl_giai5_ID = dbo.tbl_giai5.tbl_giai5_ID INNER JOIN
                          dbo.tbl_giai6 ON dbo.tbl_time.tbl_giai6_tbl_giai6_ID = dbo.tbl_giai6.tbl_giai6_ID INNER JOIN
                          dbo.tbl_giai7 ON dbo.tbl_time.tbl_giai7_tbl_giai7_ID = dbo.tbl_giai7.tbl_giai7_ID INNER JOIN
-                         dbo.tbl_giaidb ON dbo.tbl_time.tbl_giaidb_tbl_giaidb_ID = dbo.tbl_giaidb.tbl_giaidb_ID");
+                         dbo.tbl_giaidb ON dbo.tbl_time.tbl_giaidb_tbl_giaidb_ID = dbo.tbl_giaidb.tbl_giaidb_ID
+						 order by dbo.tbl_time.time asc");
                 return REST.GetHttpResponseMessFromObject(data.ToList());
             }
         }

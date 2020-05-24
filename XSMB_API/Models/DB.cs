@@ -10,7 +10,7 @@ namespace XSMB_API.Models
 {
     public class DB : DbContext
     {
-        public DB() : base("DefaultConnection")
+        public DB() : base("DefaultConnection1")
         {
             //var initializer = new MigrateDatabaseToLatestVersion<DB, QLKTX_API_V2.Migrations.Configuration>();
             //Database.SetInitializer(initializer);
@@ -32,7 +32,6 @@ namespace XSMB_API.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int tbl_time_ID { get; set; }
         public Nullable<DateTime> time { get; set; }
-        public string ghichu { get; set; }
         public virtual tbl_giaidb tbl_giaidb { get; set; }
         public virtual tbl_giai1 tbl_giai1 { get; set; }
         public virtual tbl_giai2 tbl_giai2 { get; set; }
@@ -50,7 +49,6 @@ namespace XSMB_API.Models
         public int tbl_giaidb_ID { get; set; }
         public int tbl_time_ID { get; set; }
         public Nullable<int> so1 { get; set; }
-        public string ghichu { get; set; }
     }
     public class tbl_giai1
     {
@@ -59,7 +57,6 @@ namespace XSMB_API.Models
         public int tbl_giai1_ID { get; set; }
         public int tbl_time_ID { get; set; }
         public Nullable<int> so1 { get; set; }
-        public string ghichu { get; set; }
     }
     public class tbl_giai2
     {
@@ -69,7 +66,6 @@ namespace XSMB_API.Models
         public int tbl_time_ID { get; set; }
         public Nullable<int> so1 { get; set; }
         public Nullable<int> so2 { get; set; }
-        public string ghichu { get; set; }
     }
     public class tbl_giai3
     {
@@ -83,7 +79,6 @@ namespace XSMB_API.Models
         public Nullable<int> so4 { get; set; }
         public Nullable<int> so5 { get; set; }
         public Nullable<int> so6 { get; set; }
-        public string ghichu { get; set; }
     }
     public class tbl_giai4
     {
@@ -95,7 +90,6 @@ namespace XSMB_API.Models
         public Nullable<int> so2 { get; set; }
         public Nullable<int> so3 { get; set; }
         public Nullable<int> so4 { get; set; }
-        public string ghichu { get; set; }
     }
     public class tbl_giai5
     {
@@ -109,7 +103,6 @@ namespace XSMB_API.Models
         public Nullable<int> so4 { get; set; }
         public Nullable<int> so5 { get; set; }
         public Nullable<int> so6 { get; set; }
-        public string ghichu { get; set; }
     }
     public class tbl_giai6
     {
@@ -120,7 +113,6 @@ namespace XSMB_API.Models
         public Nullable<int> so1 { get; set; }
         public Nullable<int> so2 { get; set; }
         public Nullable<int> so3 { get; set; }
-        public string ghichu { get; set; }
     }
     public class tbl_giai7
     {
@@ -132,7 +124,6 @@ namespace XSMB_API.Models
         public Nullable<int> so2 { get; set; }
         public Nullable<int> so3 { get; set; }
         public Nullable<int> so4 { get; set; }
-        public string ghichu { get; set; }
     }
 
 
